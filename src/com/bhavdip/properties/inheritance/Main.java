@@ -5,7 +5,6 @@ package com.bhavdip.properties.inheritance;
 // single   inheritance
 // multilevel inheritance
 // hierarchical inheritance
-
 // java does not support multiple and hybrid inheritance
 public class Main {
 
