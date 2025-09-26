@@ -6,6 +6,9 @@ package com.bhavdip.properties.inheritance;
 // multilevel inheritance
 // hierarchical inheritance
 // java does not support multiple and hybrid inheritance
+
+// inheritance represent is-a relationship
+// example animal is parent and tiger is child class : so you can say tiger is a animal
 public class Main {
 
     public static void main(String[] args) {
