@@ -9,6 +9,16 @@ package com.bhavdip.properties.solidprincipals;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        ShoppingCart shoppingCart = new ShoppingCart();
+        shoppingCart.addProduct(new Product("Biscuit",100));
+        shoppingCart.addProduct(new Product("Cake",200));
+        int price = shoppingCart.calculateTotalPrice();
+        System.out.println("price is " + price);
+        CartInvoicePrinter invoicePrinter = new CartInvoicePrinter(shoppingCart);
+        invoicePrinter.printInvoices();
+
+        CartDBStorage dbStorage = new CartDBStorage(shoppingCart);
+        dbStorage.dbStorage();
     }
 }
