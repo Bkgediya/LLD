@@ -1,4 +1,5 @@
 package com.bhavdip.properties.solidprincipals;
 
-public interface WithdrawableAccount {
+public interface WithdrawableAccount extends DepositeAccount {
+    void withdraw(double amount);
 }
