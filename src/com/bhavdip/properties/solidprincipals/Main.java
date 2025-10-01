@@ -7,7 +7,7 @@ package com.bhavdip.properties.solidprincipals;
 
 // L : Liskov substitution principal (LSP)
 //  ->> subclasses should be substitutable for their base class
-
+// notes : signature rule, property rule, method rule
 // i : Interface segregation principal (ISP)
 //  ->>
 
