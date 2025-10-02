@@ -9,7 +9,7 @@ package com.bhavdip.properties.solidprincipals;
 //  ->> subclasses should be substitutable for their base class
 // notes : signature rule, property rule, method rule
 // i : Interface segregation principal (ISP)
-//  ->>
+//  ->> 
 
 // d : Dependency inversion principal
 //  ->>
