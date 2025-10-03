@@ -10,10 +10,13 @@ package com.bhavdip.properties.solidprincipals;
 // notes : signature rule, property rule, method rule
 // notes:
 // i : Interface segregation principal (ISP)
-//  ->>
+//  ->> many client specific interface are better than one general purpose interface
+//  ->> client should not be forced to implement method's they don't need
 
 // d : Dependency inversion principal
 //  ->>
+
+import com.bhavdip.properties.solidprincipals.isp.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,7 +61,13 @@ public class Main {
         BankClient bankClient = new BankClient(withdrawableAccountList, depositeAccountList);
         bankClient.transactions();
 
+        TwoDimension square = new Square(5);
+        TwoDimension rectangle = new Rectangle(4,6);
+        ThreeDimension cube = new Cube(3);
 
-
+        System.out.println("Square Area: "    + square.area());
+        System.out.println("Rectangle Area: " + rectangle.area());
+        System.out.println("Cube Area: "      + cube.area());
+        System.out.println("Cube Volume: "    + cube.volume());
     }
 }
