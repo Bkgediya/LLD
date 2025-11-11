@@ -2,7 +2,7 @@ class DominoBurger implements MealFactory {
 
     public Burger createBurger(String type) {
         if (type.equalsIgnoreCase("basic")) {
-            return new BasicBurger();
+            return new SimpleBurger();
         } else if (type.equalsIgnoreCase("standard")) {
             return new StandardBurger();
         } else if (type.equalsIgnoreCase("premium")) {

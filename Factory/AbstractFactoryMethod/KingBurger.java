@@ -2,11 +2,11 @@ class KingBurger implements MealFactory {
 
     public Burger createBurger(String type) {
         if (type.equalsIgnoreCase("basic")) {
-            return new BasicBurger();
+            return new BasicWheateBurger();
         } else if (type.equalsIgnoreCase("standard")) {
-            return new StandardBurger();
+            return new StandardWheateBurger();
         } else if (type.equalsIgnoreCase("premium")) {
-            return new PremiumBurger();
+            return new PremiumWheatBurger();
         } else {
             System.out.println("Invalid burger type!");
             return null;
@@ -17,7 +17,7 @@ class KingBurger implements MealFactory {
         if (type.equalsIgnoreCase("basic")) {
             return new BasicGarlicBread();
         } else if (type.equalsIgnoreCase("cheese")) {
-            return new CheeseGarlicBread();
+            return new CheezGarlicBread();
         } else {
             System.out.println("Invalid Garlic bread type!");
             return null;

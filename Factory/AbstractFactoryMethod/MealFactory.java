@@ -1,4 +1,4 @@
 interface MealFactory {
-    Burger createBurger();
-    GarlicBread createGarlicBread();
+    Burger createBurger(String type);
+    GarlicBread createGarlicBread(String type);
 }
