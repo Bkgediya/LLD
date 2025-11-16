@@ -1,6 +1,6 @@
 package models;
 
-class MenuItem {
+public class MenuItem {
 
     private String code;
     private String name;

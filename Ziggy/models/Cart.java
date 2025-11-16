@@ -2,7 +2,7 @@ package models;
 
 import java.util.List;
 
-class Cart {
+public class Cart {
 
     private Restaurant restaurant;
     private List<MenuItem> items;
@@ -19,7 +19,7 @@ class Cart {
         items.add(item);
     }
 
-    public double getTotalPrice() {
+    public double getTotalCost() {
         double totalPrice = 0.0;
         for (MenuItem item : items) {
             totalPrice += item.getPrice();
@@ -32,7 +32,7 @@ class Cart {
         this.items.clear();
     }
 
-    public isEmpty() {
+    public boolean isEmpty() {
         return restaurant == null || items.isEmpty();
     }
 
@@ -44,7 +44,7 @@ class Cart {
         this.restaurant = restaurant;
     }
 
-    public List<MenuItem> getItems {
+    public List<MenuItem> getItems() {
         return items;
     }
 }
